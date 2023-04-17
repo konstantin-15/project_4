@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Rosario:wght@700&display=swap');
 
 *,
 *::before,
@@ -32,6 +33,7 @@ img {
 html,
 body {
 	height: 100%;
+	font-family: 'DM Sans', sans-serif;
 }
 html {
 	/* font-family: 'Poppins', sans-serif; */
@@ -42,6 +44,7 @@ html {
 }
 body {
     font-size: 1.8rem;
+	font-weight: 400;
 	line-height: 167%;
 }
 .wrapper {
@@ -141,6 +144,153 @@ body {
 	color: #FFFFFF;
 }
 
+/* ---------------------Vegetables------------------------ */
+
+.vegetables {
+	padding: 9.3rem 0px 0px 0px;
+	background: #F3FBF8;
+}
+
+.container {}
+
+.title {
+	font-family: 'Rosario', sans-serif;
+	font-weight: 700;
+	font-size: 7rem;
+	line-height: 129%;
+	color: #222222;
+	text-align: center;
+}
+.vegetables__title {
+	margin: 0px 0px 2rem 0px;
+}
+
+.vegetables__descr {
+	margin: 0px auto 4rem;
+	max-width: 637px;
+	text-align: center;
+	color: #555555;
+}
+
+.vegetables__order {
+	margin: 0 auto;
+	z-index: 2;
+}
+
+.btn-now {
+	position: relative;
+	max-width: 176px;
+	display: flex;
+	align-items: center;
+	text-align: center;
+}
+
+.btn-now__text {
+	margin-right: 2rem;
+	font-weight: 500;
+	color: #222222;
+}
+
+.btn-now__icon {
+
+}
+
+.vegetables__content {}
+
+.content-vegatables {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content-vegatables__column-img {
+	position: relative;
+	top: -45px;
+}
+
+.vegatables__img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.content-vegatables__column-info {
+	
+}
+
+.order-info {
+	display: flex;
+	flex-direction: column;
+	row-gap: 30px;
+
+}
+.order-info__block{
+	max-width: 250px;
+	padding: 1.7rem 3.3rem;
+	display: flex;
+	align-items: center;
+	background: #FFFFFF;
+}
+
+.order-info__img {
+	margin-right: 2.4rem;
+}
+
+.order-info__icon {}
+
+.order-info__body {}
+
+.order-info__statistics {
+	margin-bottom: 0.4rem;
+	font-size: 4.8rem;
+	line-height: 100%;
+	text-align: center;
+	color: #000000;
+}
+.order-info__descr {
+	text-align: center;
+}
+
+/* ---------------------Why------------------------ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------MEDIA------------------------ */
+
+@media (max-width: 1060px) {
+	.content-vegatables {
+		flex-direction: column;
+	}
+		.vegetables__order {
+	margin-bottom: 2rem;
+	}
+.content-vegatables__column-img {
+	top: 0;
+	margin: 0 auto 3rem;
+}
+.content-vegatables__column-info {
+	justify-content: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 30px;
+	margin-bottom: 3rem;
+}
+.order-info__block {
+
+}
+}
 @media (max-width: 992px) {
 	.header {
 			padding: 3rem 0 2.3rem;
@@ -166,11 +316,15 @@ body {
 }
 
 @media (max-width: 767px) {
-
+	.vegetables__title {
+			font-size: 6rem;
+		}
 }
 
 @media (max-width: 480px) {
-	
+	.vegetables__title {
+			font-size: 4.5rem;
+		}
 }
 
 
