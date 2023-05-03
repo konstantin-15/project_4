@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" /> -->
     <title>Organic Fruit & Vegetables</title>
 </head>
 <body>
@@ -58,7 +60,7 @@
         <main class="main">
             <section class="vegetables">
                 <div class="container">
-                    <h1 class="vegetables__title title">Organic Fruit & Vegetables</h1>
+                    <h2 class="vegetables__title title">Organic Fruit & Vegetables</h2>
                     <div class="vegetables__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley...</div>
                     <div class="vegetables__order btn-now">
                         <span class="btn-now__text">Order Now</span>
@@ -104,7 +106,251 @@
                     </div>
                 </div>
             </section>
+
+            <section class="why">
+                <div class="container">
+                    <div class="why__inner">
+                        <div class="why__content">
+                            <h2 class="why__title title">
+                                Why We Aer The Best?
+                            </h2>
+                            <div class="why__descr">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                standard
+                                dummy text ever since the 1500s, when an unknown printer took a galley...
+                            </div>
+                            <div class="why__blocks block-why">
+                                <div class="block-why__item">
+                                    <div class="block-why__img">
+                                        <img class="block-why__icon" src="images/why/icon1.svg" alt="moped">
+                                    </div>
+                                    <div class="block-why__body">
+                                        <h3 class="block-why__title">Fasted delivery Service</h3>
+                                        <p class="block-why__text">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="block-why__item">
+                                    <div class="block-why__img block-why__img_white">
+                                        <img class="block-why__icon" src="images/why/icon2.svg" alt="moped">
+                                    </div>
+                                    <div class="block-why__body">
+                                        <h3 class="block-why__title">Online order Service
+                                            Online order Service Online order Service Online order Service
+                                        </h3>
+                                        <p class="block-why__text">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="block-why__item">
+                                    <div class="block-why__img">
+                                        <img class="block-why__icon" src="images/why/icon3.svg" alt="moped">
+                                    </div>
+                                    <div class="block-why__body">
+                                        <h3 class="block-why__title">24/8 Service</h3>
+                                        <p class="block-why__text">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                        </p>
+                                    </div>
+                                </div>
+                                <a href="#" class="down">
+                                    <img class="arrow-down" src="images/why/arrow-down.svg" alt="arrow">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="why__photo photo-why">
+                            <img class="photo-why__img" src="images/why/photo-why.png" alt="photo">
+                        </div>
+                        <div class="why__decor">
+                            <img src="images/why/decor.png" alt="decor">
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+                
+            </section>
+
+            <section class="special-items">
+                <div class="container">
+                    <div class="special-items__row">
+                        <div class="special-items__column">
+                            <img class="special-items__img" src="images/special-items/special-photo.jpg" alt="special-photo">
+                        </div>
+                        <div class="special-items__column">
+                            <div class="special-photo__content">
+                                <h2 class="special-photo__title title">
+                                    Explor Our Special Items
+                                </h2>
+                                <div class="special-items__descr">
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                    dummy text ever since the 1500s, when an unknown printer...
+                                </div>
+                                <div class="special-items__now btn-now">
+                                    <span class="btn-now__text">Explor Now</span>
+                                    <a class="btn-now__link" href="#">
+                                        <img class="btn-now__icon" src="images/vegatables/order.svg" alt="arrow">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-us">
+                <div class="container">
+                    <div class="about-us__row">
+                        <!-- <h2 class="about-us__title title">What Our Customers About Us saying</h2> -->
+                        
+                        <div class="swiper about-us__swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="about-us__column__wrap swiper-slide">
+                                    <div class="about-us__column">
+                                        <h2 class="about-us__title title">What Our Customers About Us saying</h2>
+                                        <div class="about-us__descr">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+                                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+                                            essentially unchanged. It was popularis
+                                        </div>
+                                        <h4 class="about-us__saying-name">
+                                            Ahmed Hridoy
+                                        </h4>
+                                        <img class="about-us__rating" src="images/about-us/rating.svg" alt="rating">
+                                        <div class="ampty-block"></div>
+                                    </div>
+
+                                    <div class="about-us__column">
+                                        <div class="about-us__photo">
+                                            <img class="about-us__img" src="images/about-us/about-ahmed.png" alt="Ahmed">
+                                            <div class="about-us__block-icon">
+                                                <img class="about-us__icon" src="images/about-us/stars.svg" alt="stars">
+                                                <img class="about-us__icon" src="images/about-us/mens.svg" alt="mens">
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="about-us__column__wrap swiper-slide">
+                                    <div class="about-us__column">
+                                        <h2 class="about-us__title title">What Our Customers About Us saying</h2>
+                                        <div class="about-us__descr">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                            remaining essentially unchanged. It was popularis
+                                        </div>
+                                        <h4 class="about-us__saying-name">
+                                            Tom Genry
+                                        </h4>
+                                        <img class="about-us__rating" src="images/about-us/rating.svg" alt="rating">
+                                        <div class="ampty-block"></div>
+                                    </div>
+                                
+                                    <div class="about-us__column">
+                                        <div class="about-us__photo">
+                                            <img class="about-us__img" src="images/about-us/tom.png" alt="Tom">
+                                            <div class="about-us__block-icon">
+                                                <img class="about-us__icon" src="images/about-us/stars.svg" alt="stars">
+                                                <img class="about-us__icon" src="images/about-us/mens.svg" alt="mens">
+                                            </div>
+                                
+                                        </div>
+                                
+                                    </div>
+                                </div>
+
+                                <div class="about-us__column__wrap swiper-slide">
+                                    <div class="about-us__column">
+                                        <h2 class="about-us__title title">What Our Customers About Us saying</h2>
+                                        <div class="about-us__descr">
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                                            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+                                            remaining essentially unchanged. It was popularis
+                                        </div>
+                                        <h4 class="about-us__saying-name">
+                                            Ashly Simson
+                                        </h4>
+                                        <img class="about-us__rating" src="images/about-us/rating.svg" alt="rating">
+                                        <div class="empty-block"></div>
+                                    </div>
+                                
+                                    <div class="about-us__column">
+                                        <div class="about-us__photo">
+                                            <img class="about-us__img" src="images/about-us/dina2.png" alt="Den">
+                                            <div class="about-us__block-icon">
+                                                <img class="about-us__icon" src="images/about-us/stars.svg" alt="stars">
+                                                <img class="about-us__icon" src="images/about-us/mens.svg" alt="mens">
+                                            </div>
+                                
+                                        </div>
+                                
+                                    </div>
+                                </div>
+                                <div class="block-wrap-swbtn">
+                                    <div class="swiper-button-prev">
+                                        <ion-icon class="prew-icon" name="chevron-back-outline"></ion-icon>
+                                    </div>
+                                    <div class="swiper-button-next">
+                                        <ion-icon class="next-icon" name="chevron-forward-outline"></ion-icon>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+
+                            <!-- If we need scrollbar -->
+                            <div class="swiper-scrollbar"></div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </section>
+
+            <section class="download">
+                <div class="container">
+                    <div class="download__row">
+                        
+                            <div class="download__image">
+                                <img class="download__img-1" src="images/download/phone1.png" alt="phone">
+                                <img class="download__img-2" src="images/download/phone2.png" alt="phone">
+                            </div>
+                       
+                        
+                        <div class="download__body">
+                            <div class="download__label">
+                                Download App
+                            </div>
+                            <h2 class="download__title title">
+                                Simple Way To Order Your Organic Fruit
+                            </h2>
+                            <p class="download__text">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...
+                            </p>
+                            <div class="download__application application-download">
+                                <a class="application-download__link" href="#">
+                                    <img class="application-download__img" src="images/download/app-store.svg" alt="App Store">
+                                </a>
+                                <a class="application-download__link" href="#">
+                                    <img class="application-download__img" src="images/download/google-play.svg" alt="Google Play">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
 </body>
 </html>
