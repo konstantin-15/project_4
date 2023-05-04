@@ -620,9 +620,61 @@ body {
 	margin-right: 2.4rem;
 }
 
+/* --------------------- Footer ------------------------ */
 
+.footer {
+	padding: 105px 0px 118px 0px;
+}
+.footer__row {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 -2rem;
+}
 
-
+.footer__column:first-child {
+	flex: 1 1 40%;
+	max-width: 385px;
+	margin-right: 7.8%;
+}
+.footer__column {
+	flex: 0 1 20%;
+	padding: 0 2rem;
+}
+.logo__icon {
+	
+}
+.footer__logo {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 30px;
+}
+.footer__title {
+	margin-bottom: 3rem;
+	padding-top: 38px;
+	font-weight: 500;
+	font-size: 2.4rem;
+	line-height: 129%;
+	color: #222222;
+}
+.footer__item:not(:last-child) {
+	margin-bottom: 24px;
+}
+.footer__link {
+	line-height: 127%;
+	color: #555555;
+}
+.footer__mail {
+	width: 216px;
+	display: block;
+	margin-bottom: 25px;
+	line-height: 129%;
+	color: #222222;
+}
+.social {
+	width: 172px;
+	display: flex;
+	justify-content: space-between;
+}
 
 
 
@@ -666,6 +718,9 @@ body {
 		left: 100%;
 		transform: translate(-100%);
 	}
+				.download__row {
+	justify-content: space-between;
+				}
 	.download__image {
 		padding: 0 20px 0 20px;
 		flex: 0 1 350px;
@@ -751,7 +806,41 @@ body {
 	.download__row {
 	max-width: 600px;
 	margin: 0 auto;
-					}
+	}
+		.footer {
+			padding: 25px 0px;
+		}
+	.footer__row {
+		flex-wrap: wrap;
+		justify-content: space-between;
+		max-width: 600px;
+		margin: 0 auto
+
+	}
+
+	.footer__column:first-child {
+		margin: 0;
+		flex: 1 1 100%;
+		max-width: 100%;
+	}
+
+	.footer__column {
+		flex: 0 1 25%;
+	}
+	
+	/* .column-one {
+		order: 1;
+	}
+	.column-two {
+		order: 4;
+	}
+	.column-three {
+		order: 3;
+	}
+	.footer__column.column-four {
+		order: 2;
+	} */
+
 }
 
 @media (max-width: 767px) {
@@ -784,6 +873,9 @@ body {
 	.block-wrap-swbtn {
 
 	}
+		.footer__column {
+			flex: 0 1 50%;
+		}
 }
 
 @media (max-width: 480px) {
@@ -835,7 +927,15 @@ body {
 	.empty-block {
 		display: block;
 	}
-														
+		.footer__column {
+			flex: 0 1 100%;
+			text-align: center;
+		}
+				.footer__mail,
+				.footer__social {
+					margin: 25px auto;
+				}
+
 }
 
 @media (max-width: 380px) {
