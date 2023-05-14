@@ -188,6 +188,7 @@ body {
 	display: flex;
 	align-items: center;
 	text-align: center;
+
 }
 
 .btn-now__text {
@@ -195,9 +196,11 @@ body {
 	font-weight: 500;
 	color: #222222;
 }
-
 .btn-now__icon {
-
+		transition: all 0.2s ease;
+}
+.btn-now__icon:hover {
+	transform: scale(1.1);
 }
 
 .vegetables__content {}
@@ -615,7 +618,12 @@ body {
 .application-download {
 	display: flex;
 }
-
+.application-download__link {
+	transition: all .3s ease;
+}
+.application-download__link:hover {
+	transform: scale(1.1, 1.1);
+}
 .application-download__link:not(:last-child) {
 	margin-right: 2.4rem;
 }
@@ -675,8 +683,21 @@ body {
 	display: flex;
 	justify-content: space-between;
 }
-
-
+.social__icon:hover .social .social__link {
+	border: 1px solid black;
+}
+.social__link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 50px;
+	padding: 10px;
+	border-radius: 100%;
+	border: 1px solid transparent;
+}
+.social__link:hover {
+	border: 1px solid black;
+}
 
 
 
@@ -689,12 +710,13 @@ body {
 
 @media (max-width: 1165px) {
 	.about-us__row {
-		width: 600px;
+		max-width: 600px;
 		margin: 0 auto;
 	}
 		.about-us__title {
 			/* position: relative;
 			margin-bottom: 20px; */
+			text-align: center;
 		}
 	.about-us__column__wrap {
 		flex-direction: column-reverse;
@@ -706,7 +728,7 @@ body {
 			text-align: center;
 		}
 	.about-us__photo {
-		margin: 200px auto 0;
+		margin: 300px auto 0;
 	}
 		.about-us__column {
 			width: 100%;
@@ -790,6 +812,10 @@ body {
 	}
 	.why {
 		background: none;
+		padding: 7.5rem 0 7.5rem;
+	}
+	.special-items {
+		padding: 5rem 0 5rem;
 	}
 	.special-items__row {
 		flex-direction: column;
@@ -799,6 +825,12 @@ body {
 	}
 	.special-items__now {
 		margin: 0 auto
+	}
+	.about-us {
+		padding: 5rem 0 5rem;
+	}
+	.download {
+		padding: 5rem 0px 5rem 0px;
 	}
 	.download__image {
 	display: none;
@@ -844,17 +876,40 @@ body {
 }
 
 @media (max-width: 767px) {
+	.vegetables {
+		padding: 5rem 0px 0px 0px;
+	}
 	.vegetables__title {
 			font-size: 6rem;
 		}
+	.why {
+		padding: 5rem 0 5rem;
+	}
+	.why__title {
+		font-size: 6rem;
+	}
 	.block-why__item {
 		padding: 2rem 3.92rem;
 	}
+	.special-items {
+		padding: 2.5rem 0 2.5rem;
+	}
+	.about-us {
+		padding: 2.5rem 0 2.5rem;
+	}
+	.about-us__title {
+		font-size: 6rem;
+		text-align: center;
+	}
+	.special-photo__title {
+		font-size: 6rem;
+	}
 	.about-us__row {
-		width: 400px;
+		max-width: 600px;
 		margin: 0 auto;
 	}
 	.about-us__photo {
+		margin: 250px auto 0;
 		width: 300px;
 		height: 300px;
 	}
@@ -865,23 +920,31 @@ body {
 		transform: translate(-50%);
 		width: 176px;
 		height: 70px;
-
 	}
-		.about-us__icon:not(:last-child) {
-			margin-bottom: 5px;
-		}
-	.block-wrap-swbtn {
-
+	.about-us__icon:not(:last-child) {
+		margin-bottom: 5px;
 	}
-		.footer__column {
-			flex: 0 1 50%;
-		}
+	.download {
+		padding: 2.5rem 0px 2.5rem 0px;
+	}
+	.download__title {
+		font-size: 6rem;
+	}
+	.footer__column {
+		flex: 0 1 50%;
+	}
 }
 
 @media (max-width: 480px) {
 	.vegetables__title {
 			font-size: 4.5rem;
 		}
+	.why {
+		padding: 5rem 0 5rem;
+	}
+	.why__title {
+		font-size: 4.5rem;
+	}
 	.block-why__item {
 		flex-direction: column;
 		justify-content: center;
@@ -893,12 +956,22 @@ body {
 		max-width: 100%;
 		text-align: center;
 	}
+	.special-items {
+		padding: 5rem 0 5rem;
+	}
+	.special-photo__title {
+		font-size: 4.5rem;
+	}
+	.about-us {
+		padding: 5rem 0 5rem;
+	}
+	.about-us__title {
+		font-size: 4.5rem;
+	}
 	.arrow-down {
 		padding: 3rem;
 	}
-	.about-us {
-		padding: 96px 0 90px;
-	}
+
 	.about-us__row {
 		width: 350px;
 		margin: 0 auto;
@@ -910,6 +983,7 @@ body {
 		margin-bottom: 20px;
 	}
 	.about-us__photo {
+		margin: 200px auto 0;
 		width: 250px;
 		height: 250px;
 	}
@@ -927,20 +1001,29 @@ body {
 	.empty-block {
 		display: block;
 	}
-		.footer__column {
-			flex: 0 1 100%;
-			text-align: center;
-		}
-				.footer__mail,
-				.footer__social {
-					margin: 25px auto;
-				}
+	.download__title {
+		font-size: 4.5rem;
+	}
+	.footer__column {
+		flex: 0 1 100%;
+		text-align: center;
+	}
+	.footer__item:not(:last-child) {
+		margin-bottom: 16px;
+	}
+	.footer__mail,
+	.footer__social {
+		margin: 25px auto;
+	}
 
 }
 
 @media (max-width: 380px) {
 	.about-us__row {
 		max-width: 280px;
+	}
+	.about-us__photo {
+		margin: 250px auto 0;
 	}
 	.block-wrap-swbtn {
 		left: 74%;
