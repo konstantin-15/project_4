@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header class="header"  id="main-menu">
             <div class="container">
                 <!-- Меню бургер -->
                 <input type="checkbox" id="burger">
@@ -20,22 +20,21 @@
                 <div class="burger__line line-third"></div>
                 <div class="burger__line line-fourth"></div>
                 <!--------------------------->
-                <div class="header__content">
-                    
+                <div class="header__content"> 
                     <div class="header__column-left">
                         <nav class="menu">
                             <ul class="menu__list">
                                 <li class="menu__item">
-                                    <a class="menu__link" href="">About Us</a>
+                                    <a class="menu__link" href="#about">About Us</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link" href="">Service</a>
+                                    <a class="menu__link" href="#service">Service</a>
                                 </li>
                                 <li class="menu__item">
                                     <a class="menu__link" href="">Menu</a>
                                 </li>
                                 <li class="menu__item">
-                                    <a class="menu__link" href="">Contact</a>
+                                    <a class="menu__link" href="#contacts">Contact</a>
                                 </li>
                             </ul>
                         </nav>
@@ -43,7 +42,6 @@
                             <img class="logo__icon" src="images/header/logo.svg" alt="Vegetables-logo">
                         </a>
                     </div>
-
                     <div class="header__column-right">
                         <div class="header__order">
                             <form class="form" action="">
@@ -55,60 +53,63 @@
                                 <img class="basket__icon" src="images/header/Buy.svg" alt="basket">
                             </a>
                         </div>
-
                         <a class="header__reg" href="#">Register Now</a>
                     </div>
-                        
-                    
-                    
-                    
                 </div>
             </div>
         </header>
 
         <main class="main">
-            <section class="vegetables">
+            <section class="vegetables" id="reviews">
                 <div class="container">
-                    <h2 class="vegetables__title title">Organic Fruit & Vegetables</h2>
-                    <div class="vegetables__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley...</div>
-                    <div class="vegetables__order btn-now">
-                        <span class="btn-now__text">Order Now</span>
-                        <a class="btn-now__link" href="#">
-                            <img class="btn-now__icon" src="images/vegatables/order.svg" alt="arrow">
-                        </a>
-                    </div>
-
-                    <div class="vegetables__content content-vegatables">
-                        <div class="content-vegatables__column-img">
-                            <img class="vegatables__img" src="images/vegatables/vegetables-img.png" alt="vegatables">
+                    <div class="vegetables__body">
+                        <div class="parallax-vegetables"></div>
+                        <h2 class="vegetables__title title">Organic Fruit & Vegetables</h2>
+                        <div class="vegetables__descr">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                            has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley...</div>
+                        <div class="vegetables__order btn-now">
+                            <span class="btn-now__text">Order Now</span>
+                            <a class="btn-now__link" href="#">
+                                <img class="btn-now__icon" src="images/vegatables/order.svg" alt="arrow">
+                            </a>
                         </div>
-
-                        <div class="content-vegatables__column-info order-info">
-                            <div class="order-info__block">
-                                <div class="order-info__img">
-                                    <img class="order-info__icon" src="images/vegatables/order-icon1.svg" alt="icon">
-                                </div>
-                                <div class="order-info__body">
-                                    <div class="order-info__statistics">30<span>k</span></div>
-                                    <div class="order-info__descr">User Order</div>
-                                </div>
+                        <div class="vegetables__content content-vegatables">
+                            <div class="content-vegatables__column-img">
+                                <img class="vegatables__img" src="images/vegatables/vegetables-img.png" alt="vegatables">
                             </div>
-                            <div class="order-info__block">
-                                <div class="order-info__img">
-                                    <img class="order-info__icon" src="images/vegatables/order-icon2.svg" alt="icon">
+                            <div class="content-vegatables__column-info order-info">
+                                <div class="order-info__block">
+                                    <div class="order-info__img">
+                                        <img class="order-info__icon" src="images/vegatables/order-icon1.svg" alt="icon">
+                                    </div>
+                                    <div class="order-info__body">
+                                        <div class="block">
+                                            <div class="order-info__statistics" data-target="30">0</div>
+                                            <div class="order-info__sign">k</div>
+                                        </div>
+                                        <div class="order-info__descr">User Order</div>
+                                    </div>
                                 </div>
-                                <div class="order-info__body">
-                                    <div class="order-info__statistics">20<span>k</span></div>
-                                    <div class="order-info__descr">Reviews(4.8)</div>
+                                <div class="order-info__block">
+                                    <div class="order-info__img">
+                                        <img class="order-info__icon" src="images/vegatables/order-icon2.svg" alt="icon">
+                                    </div>
+                                    <div class="order-info__body">
+                                        <div class="block">
+                                            <div class="order-info__statistics" data-target="20">0</div>
+                                            <div class="order-info__sign">k</div>
+                                        </div>
+                                        <div class="order-info__descr">Reviews(4.8)</div>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="order-info__block">
-                                <div class="order-info__img">
-                                    <img class="order-info__icon" src="images/vegatables/order-icon3.svg" alt="icon">
-                                </div>
-                                <div class="order-info__body">
-                                    <div class="order-info__statistics">300</div>
-                                    <div class="order-info__descr">Items</div>
+                                <div class="order-info__block">
+                                    <div class="order-info__img">
+                                        <img class="order-info__icon" src="images/vegatables/order-icon3.svg" alt="icon">
+                                    </div>
+                                    <div class="order-info__body">
+                                        <div class="order-info__statistics" data-target="300">0</div>
+                                        <div class="order-info__descr">Items</div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +117,7 @@
                 </div>
             </section>
 
-            <section class="why">
+            <section class="why" id="service">
                 <div class="container">
                     <div class="why__inner">
                         <div class="why__content">
@@ -125,8 +126,7 @@
                             </h2>
                             <div class="why__descr">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard
-                                dummy text ever since the 1500s, when an unknown printer took a galley...
+                                standard dummy text ever since the 1500s, when an unknown printer took a galley...
                             </div>
                             <div class="why__blocks block-why">
                                 <div class="block-why__item">
@@ -176,12 +176,12 @@
                         </div>
                     </div>
                 </div> <!-- /.container -->
-                
             </section>
 
             <section class="special-items">
                 <div class="container">
                     <div class="special-items__row">
+                        <div class="parallax-special"></div>
                         <div class="special-items__column">
                             <img class="special-items__img" src="images/special-items/special-photo.jpg" alt="special-photo">
                         </div>
@@ -191,8 +191,7 @@
                                     Explor Our Special Items
                                 </h2>
                                 <div class="special-items__descr">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
-                                    dummy text ever since the 1500s, when an unknown printer...
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer...
                                 </div>
                                 <div class="special-items__now btn-now">
                                     <span class="btn-now__text">Explor Now</span>
@@ -206,23 +205,17 @@
                 </div>
             </section>
 
-            <section class="about-us">
+            <section class="about-us" id="about">
                 <div class="container">
                     <div class="about-us__row">
-                        <!-- <h2 class="about-us__title title">What Our Customers About Us saying</h2> -->
-                        
                         <div class="swiper about-us__swiper">
-                            <!-- Additional required wrapper -->
                             <div class="swiper-wrapper">
                                 <!-- Slides -->
                                 <div class="about-us__column__wrap swiper-slide">
                                     <div class="about-us__column">
                                         <h2 class="about-us__title title">What Our Customers About Us saying</h2>
                                         <div class="about-us__descr">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                                            specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
-                                            essentially unchanged. It was popularis
+                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis
                                         </div>
                                         <h4 class="about-us__saying-name">
                                             Ahmed Hridoy
@@ -230,7 +223,6 @@
                                         <img class="about-us__rating" src="images/about-us/rating.svg" alt="rating">
                                         <div class="ampty-block"></div>
                                     </div>
-
                                     <div class="about-us__column">
                                         <div class="about-us__photo">
                                             <img class="about-us__img" src="images/about-us/about-ahmed.png" alt="Ahmed">
@@ -238,20 +230,15 @@
                                                 <img class="about-us__icon" src="images/about-us/stars.svg" alt="stars">
                                                 <img class="about-us__icon" src="images/about-us/mens.svg" alt="mens">
                                             </div>
-                                            
                                         </div>
-                                        
                                     </div>
                                 </div>
-
                                 <div class="about-us__column__wrap swiper-slide">
                                     <div class="about-us__column">
                                         <h2 class="about-us__title title">What Our Customers About Us saying</h2>
                                         <div class="about-us__descr">
                                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                            remaining essentially unchanged. It was popularis
+                                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis
                                         </div>
                                         <h4 class="about-us__saying-name">
                                             Tom Genry
@@ -259,7 +246,6 @@
                                         <img class="about-us__rating" src="images/about-us/rating.svg" alt="rating">
                                         <div class="ampty-block"></div>
                                     </div>
-                                
                                     <div class="about-us__column">
                                         <div class="about-us__photo">
                                             <img class="about-us__img" src="images/about-us/tom.png" alt="Tom">
@@ -267,20 +253,15 @@
                                                 <img class="about-us__icon" src="images/about-us/stars.svg" alt="stars">
                                                 <img class="about-us__icon" src="images/about-us/mens.svg" alt="mens">
                                             </div>
-                                
                                         </div>
-                                
                                     </div>
                                 </div>
-
                                 <div class="about-us__column__wrap swiper-slide">
                                     <div class="about-us__column">
                                         <h2 class="about-us__title title">What Our Customers About Us saying</h2>
                                         <div class="about-us__descr">
                                             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
-                                            make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
-                                            remaining essentially unchanged. It was popularis
+                                            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularis
                                         </div>
                                         <h4 class="about-us__saying-name">
                                             Ashly Simson
@@ -288,17 +269,14 @@
                                         <img class="about-us__rating" src="images/about-us/rating.svg" alt="rating">
                                         <div class="empty-block"></div>
                                     </div>
-                                
                                     <div class="about-us__column">
                                         <div class="about-us__photo">
-                                            <img class="about-us__img" src="images/about-us/dina2.png" alt="Den">
+                                            <img class="about-us__img" src="images/about-us/dina2.png" alt="Dina">
                                             <div class="about-us__block-icon">
                                                 <img class="about-us__icon" src="images/about-us/stars.svg" alt="stars">
                                                 <img class="about-us__icon" src="images/about-us/mens.svg" alt="mens">
                                             </div>
-                                
                                         </div>
-                                
                                     </div>
                                 </div>
                                 <div class="block-wrap-swbtn">
@@ -316,7 +294,6 @@
                             <!-- If we need scrollbar -->
                             <div class="swiper-scrollbar"></div>
                         </div>
-                       
                     </div>
                 </div>
             </section>
@@ -324,15 +301,12 @@
             <section class="download">
                 <div class="container">
                     <div class="download__row">
-                        
                         <div class="download__image">
                             <img class="download__img-1" src="images/download/phone1.png" alt="phone">
                             <img class="download__img-2" src="images/download/phone2.png" alt="phone">
                         </div>
                         <div class="download__body">
-                            <div class="download__label">
-                                Download App
-                            </div>
+                            <div class="download__label">Download App</div>
                             <h2 class="download__title title">
                                 Simple Way To Order Your Organic Fruit
                             </h2>
@@ -361,37 +335,34 @@
                             <img class="footer__logo logo__icon" src="images/header/logo.svg" alt="Vegetables-logo">
                             <p class="footer__text">
                                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
-                                standard
-                                dummy text ever since the 1500s, when an unknown printer...
+                                standard dummy text ever since the 1500s, when an unknown printer...
                             </p>
                         </div>
                     </div>
-
                     <div class="footer__column column-two">
                         <div class="column-block__two">
                             <h4 class="footer__title">Navigation</h4>
                             <nav class="footer__menu">
                                 <ul class="footer__list">
                                     <li class="footer__item">
-                                        <a class="footer__link" href="#">About Us</a>
+                                        <a class="footer__link" href="#about">About Us</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a class="footer__link" href="#">Service</a>
+                                        <a class="footer__link" href="#service">Service</a>
                                     </li>
                                     <li class="footer__item">
-                                        <a class="footer__link" href="#">Menu</a>
+                                        <a class="footer__link" href="#main-menu">Menu</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                     </div>
-
                     <div class="footer__column column-three">
                         <div class="column-block__three">
                             <h4 class="footer__title">Resources</h4>
                             <ul class="footer__list">
                                 <li class="footer__item">
-                                    <a class="footer__link" href="#">Reviews</a>
+                                    <a class="footer__link" href="#reviews">Reviews</a>
                                 </li>
                                 <li class="footer__item">
                                     <a class="footer__link" href="#">Blog</a>
@@ -402,8 +373,7 @@
                             </ul>
                         </div>
                     </div>
-
-                    <div class="footer__column column-four">
+                    <div class="footer__column column-four" id="contacts">
                         <div class="column-block__four">
                             <h4 class="footer__title">Contact Us</h4>
                             <div class="footer__mail" type="email"></div>
@@ -429,6 +399,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script> -->
 </body>
 </html>
