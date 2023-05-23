@@ -155,16 +155,17 @@ body {
 .header__order {
 		display: flex;
 }
-.form {
+.search-form {
 	margin: 0 2rem 0 0;
 	display: flex;
 	align-items: center;
 }
-.button-form {
+.button-search {
 	width: 40px;
 	height: 40px;
 	border-radius: 50%;
 	background: #F3FBF8;
+	cursor: pointer;
 }
 .header__basket {
 	margin: 0 3.2rem 0 0;
@@ -424,7 +425,7 @@ body {
 	position: relative;
 }
 .about-us__column__wrap {
-	position: relative;
+	/* position: relative; */
 	display: flex;
 	justify-content: space-between;
 }
